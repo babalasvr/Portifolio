@@ -21,3 +21,12 @@ var typed = new Typed(".typing2", {
     backSpeed:60,
     loop:true
 });
+
+function NavBar() {
+    var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

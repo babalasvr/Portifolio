@@ -19,11 +19,26 @@ body{
     transition: all 0.3s ease;
 }
 
+.icon{
+    display: none;
+}
+
+.active{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
 .navbar.sticky{
     background: #0f1011;
     background: rgba(0, 0, 0, 0.507);
     color: white;
-    padding: 15px 0;
+    padding: 8px 0;
+}
+
+.menu{
+    margin-left: 30%;
 }
 
 .a-menu{
@@ -125,6 +140,7 @@ main{
     border: 1px solid #0f1011;
     border-radius: 5px;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .btn-contrate:hover{
@@ -157,6 +173,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 .esquerda h3{
@@ -212,7 +229,7 @@ main{
 }
 
 .direita .js::before{
-    width: 68%;
+    width: 75%;
 }
 
 .direita .git::before{
@@ -220,7 +237,7 @@ main{
 }
 
 .direita .github::before{
-    width: 75%;
+    width: 80%;
 }
 /* Projetos */
 
@@ -291,4 +308,308 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+      
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .navbar #myLinks {
+        display: none;
+      }
+      
+      .navbar a {
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      .navbar a.icon {
+        color: white;
+        margin-top: 5px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .navbar a:hover {
+        color: white;
+        margin-top: 5px;
+      }
+      
+      .active {
+        font-weight: bold;
+        color: white;
+      }
+    
+    main{
+        height: 100vh;
+        min-height: 500px;
+    }
+    
+    /* Inicio */
+    .inicio{
+        color: white;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        background: url(./img/fundo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .texto{
+        margin-left: 6%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .space{
+        margin-bottom: 7px;
+    }
+    
+    .text-1{
+        font-size: 20px;
+    }
+    
+    .text-2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-left: -3px;
+    }
+    
+    .text-3{
+        font-size: 28px;
+        margin: 5px 0;
+    }
+    
+    .typing{
+        color: rgb(255, 0, 0);
+    }
+    
+    /* Sobre */
+    
+    .sobre{
+        text-align: center;
+        padding: 45px 0px;
+    }
+    
+    .sobre span{
+        font-size: 43px;
+    }
+    
+    .sobre-center{
+        display: flex;
+        align-items: center;
+        height: 500px;
+    }
+    
+    #foto{
+        display: none;
+    }
+    
+    #sobre-mim{
+        font-size: 13px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        text-align: justify;
+        width: 85%;
+    } 
+    
+    .btn-contrate{
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: -20px;
+        padding: 10px;
+        width: 250px;
+        font-size: 18px;
+        font-weight: bold;
+        color: red;
+        background-color: white;
+        border: 1px solid #0f1011;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    
+    .btn-contrate:hover{
+        color: white;
+        background-color: rgb(255, 0, 0);
+    }
+    
+    
+    /* Habilidades */
+    
+    .habilidades{
+        height: 850px;
+        background-color: #0f1011;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .habilidades h1{
+        text-align: center;
+        padding: 25px 0px;
+        font-size: 38px;
+    }
+    
+    .habilidades-center{
+        height: 84%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .esquerda{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15%;
+        margin-left: 5%;
+    }
+    
+    .esquerda h3{
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+    
+    .esquerda p{
+        width: 100%;
+        font-size: 19px;
+        text-align: justify;
+        letter-spacing: -1px;
+    }
+    
+    .direita{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .direita .info{
+        margin-bottom: 10px;
+    }
+    
+    .direita span{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .direita .line{
+        width: 60%;
+        height: 5px;
+        background: #ccc;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .direita .line::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: red;
+    }
+    .direita .html::before{
+        width: 90%;
+    }
+    
+    .direita .css::before{
+        width: 70%;
+    }
+    
+    .direita .js::before{
+        width: 75%;
+    }
+    
+    .direita .git::before{
+        width: 75%;
+    }
+    
+    .direita .github::before{
+        width: 80%;
+    }
+
+    
+    .projetos{
+        height: 300%;
+        padding: 2.5% 15%;
+        min-height: 35vh;
+        position: relative;
+    }
+    
+    .projetos h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .grid-projetos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-projetos h2{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    
+    .grid-projetos p{
+        display: block;
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    .grid-projetos span{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .projetos_card{
+        width: 90%;
+        margin-bottom: 45px;
+    }
+    
+    .projetos_card a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .projeto-img{
+        border-left: 5px solid red;      
+        height: 220px;
+        width: 110%;
+    }
+    
+    .contato{
+        height: 160px;
+        background-color: #0f1011;
+        color: white;
+    }
+    
+    .fale_conosco{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }

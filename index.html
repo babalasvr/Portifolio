@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Gabriel Batista</title>
 </head>
 <body>
+    <div class="mobile-container">
     <div class="navbar">
-        <div class="menu">
+        <a class="active">Portifolio Gabriel</a>
+        <div class="menu" id="myLinks">
             <a class="a-menu" href="#inicio">Inicio</a>
             <a class="a-menu" href="#sobre">Sobre</a>
             <a class="a-menu" href="#habili">Habilidades</a>
             <a class="a-menu" href="#projetos">Projetos</a>
             <a class="a-menu" href="#contato">Contato</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="NavBar()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
     <main>
         <section class="inicio" id="inicio">
@@ -43,7 +50,7 @@
                                 empenhado desde novo.. Mas hoje eu reconheço o tempo perdido e quero uma oportunidade
                                  no mercado de trabalho mostrando que eu sou capaz e mostrar oque eu aprendi nesse pouco
                                   tempo de estudo autônomo! </p>
-                                  <button class="btn-contrate">Dowload CV</button>
+                                  <a class="btn-contrate" href="./img/cv gabriel_removed (2).pdf">Download CV</a>
                 </div>
             </div>
         </section>
@@ -52,8 +59,9 @@
             <div class="habilidades-center">
                 <div class="esquerda">
                     <h3>Experiencia</h3>
-                    <p>Ate então não tenho nenhuma experiencia profissional na área de dev a não ser
-                         projetos pessoais e freelancers que já fiz como landing pages.</p>
+                    <p>Ate então não tenho nenhuma experiencia profissional na área de dev a não ser landing pages e 
+                         projetos pessoais como alguns apresentados abaixo na aba projetos alguns com ajuda de cursos ou videos no youtube e outros de forma propria como um bot desenvolvido
+                         para varrer jogos bons na BET365.</p>
                 </div>
                 <div class="direita">
                     <div class="info">
@@ -68,7 +76,7 @@
                     <div class="line css"></div>
                     <div class="info">
                         <span>JS </span>
-                        <span>68%</span>
+                        <span>75%</span>
                     </div>
                     <div class="line js"></div>
                     <div class="info">
@@ -78,7 +86,7 @@
                     <div class="line git"></div>
                     <div class="info">
                         <span>GitHub </span>
-                        <span>75%</span>
+                        <span>80%</span>
                     </div>
                     <div class="line github"></div>
                 </div>
@@ -144,17 +152,30 @@
                     </p>
                     <span>tecnologias usadas no projeto: HTML, CSS e JavaScript</span>
                 </section>
+
+                <!-- <div class="card">
+                    <img src="./img/drumkit.png" alt="aa">
+                    <div class="card-header">
+                        <h4>Drumkit</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">Projeto pessoal para treinar meu html e js</div>
+                    </div>
+                    <div class="card-footer">HTML JS</div>
+                </div> -->
             </div>
         </section>
-        <section class="contato" id="contato">
-            <div class="fale_conosco">
-                <h2>Fale Conosco</h2><br><br>
-                <p>Tel: (31) 97337-7397</p><br>
-                <p>Email: 21501270@aluno.cotemig.com.br</p>
+        <footer class="bg-dark text-center text-white text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <span class="text-white">Gabriel Batista</span>
             </div>
-        </section>
+            <!-- Copyright -->
+          </footer>
     </main>
-    
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
